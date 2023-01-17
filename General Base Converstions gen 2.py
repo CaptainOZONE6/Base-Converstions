@@ -52,11 +52,9 @@ def main():
 def deci():
     global flow
     decision = input("Do you wish to Convert Next(c), or Quit(q) ")
-    if decision == "q":
+    if (decision.lower) == "q":
         flow = False
-    elif decision == "c":
-        main()
-    else:
+    elif (decision.lower) != "c":
         print("Baka")
         flow = False
 
