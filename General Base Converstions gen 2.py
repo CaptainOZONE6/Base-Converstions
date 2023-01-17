@@ -17,15 +17,18 @@ def main():
 
     # check is the base of the inputed number is proper, and double check if user is stoopid
     def check():
+        if n < 0 or m < 0:
+            print("Sorry, we are still working on negative base conversions")
+            main()
+        if inum < 0:
+            print(ValueError)
+            main()
         for i in inums:
             if int(i) >= m:
                 print("Improper Base")
                 main()
         if type(inum) != int:
             print(TypeError)
-            main()
-        if inum < 0:
-            print(ValueError)
             main()
     
     def ntm():
